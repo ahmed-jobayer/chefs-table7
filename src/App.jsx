@@ -6,7 +6,7 @@ function App() {
 
   return (
     <>
-      <h1 className="text-4xl">react</h1>
+      <h1 className="">react</h1>
       <div class="card w-96 bg-base-100 shadow-xl container mx-auto">
         <figure>
           <img
