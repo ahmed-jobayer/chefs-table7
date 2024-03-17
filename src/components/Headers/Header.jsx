@@ -2,7 +2,7 @@ import { IoSearch } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <div className="container mx-auto">
+    <div>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
           <a className="btn btn-ghost text-xl">Recipe Calories</a>
