@@ -2,7 +2,7 @@ import "./App.css";
 import Header from "./components/Headers/Header";
 import Hero from "./components/Hero-section/Hero";
 import RecipeCardSection from "./components/Recipes/RecipeCardSection";
-import SideBar from "./components/Recipes/SideBar";
+import SideBar from "./components/Side Bar/SideBar";
 import RecipesHeading from "./components/Recipes/RecipesHeading";
 
 function App() {

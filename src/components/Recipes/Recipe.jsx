@@ -7,9 +7,9 @@ const Recipe = ({recipe}) => {
   return (
     <div>
         
-      <div className="  bg-base-100 shadow-xl p-6">
+      <div className="  bg-base-100 shadow-xl p-6 border-[1px] border-solid border-[#28282833] rounded-2xl ">
         <img
-          className="max-w-full"
+          className="max-w-full rounded-3xl"
           src={image}
           alt={recipe_name}
         />
