@@ -9,7 +9,7 @@ const WantToCook = ({toCook}) => {
         <td>{preparing_time}</td>
         <td>{calories}</td>
         <td>
-          <button className="btn">Preparing</button>
+          <button className="btn bg-[#0BE58A] rounded-[50px] text-black border-none">Preparing</button>
         </td>
       </tr>
     </>

@@ -1,14 +1,15 @@
 import { IoSearch } from "react-icons/io5";
+import { CgProfile } from "react-icons/cg";
 
 const Header = () => {
   return (
     <div>
       <div className="navbar bg-base-100">
         <div className="navbar-start">
-          <a className="btn btn-ghost text-xl">Recipe Calories</a>
+          <a className=" text-3xl font-bold border-none">Recipe Calories</a>
         </div>
         <div className="navbar-center hidden lg:flex">
-          <ul className="menu menu-horizontal px-1">
+          <ul className="menu menu-horizontal px-1 text-[#0F0B43B3]">
             <li>
               <a>Home</a>
             </li>
@@ -24,15 +25,13 @@ const Header = () => {
           </ul>
         </div>
         <div className="navbar-end gap-1">
-          <div className="">
-            <label className=" bg-[#150B2D0D] flex items-center gap-2">
-              <IoSearch></IoSearch>
-              <input type="text" className="border-none" placeholder="Search" />
-            </label>
-          </div>
+          <label className="input input-bordered flex items-center gap-2 mr-4 bg-[#0F0B2B0D] rounded-[50px]">
+            <IoSearch></IoSearch>
+            <input type="text" className="grow border-none" placeholder="Search" />
+          </label>
           <div className="avatar">
-            <div className="w-9 rounded-full ">
-              <img src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg" />
+            <div className="rounded-full  ">
+              <CgProfile className="bg-[#0BE58A] text-3xl p-1 " />
             </div>
           </div>
         </div>

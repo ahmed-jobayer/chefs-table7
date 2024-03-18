@@ -4,14 +4,14 @@ import WantToCook from "./WantToCook";
 const SideBar = ({ wantToCook }) => {
   console.log(wantToCook)
   return (
-    <div className="w-2/5">
+    <div className="w-2/5 ">
       {/* Want to cook */}
 
       <div className="overflow-x-auto">
         <div className="text-center">
-          <h1>Want to cook: {wantToCook.length}</h1>
+          <h1 className="text-[#282828] text-2xl font-semibold">Want to cook: {wantToCook.length}</h1>
         </div>
-        <table className="table table-zebra border-collapse">
+        <table className="table table-zebra border-collapse text-[#0F0B2B99]">
           {/* head */}
           <thead>
             <tr>
@@ -33,11 +33,11 @@ const SideBar = ({ wantToCook }) => {
 
       <div className="overflow-x-auto">
         <div className="text-center">
-          <h1>
+          <h1 className="text-[#282828] text-2xl font-semibold">
             Currently cooking: <span> 01</span>{" "}
           </h1>
         </div>
-        <table className="table table-zebra border-collapse">
+        <table className="table table-zebra border-collapse text-[#0F0B2B99]">
           {/* head */}
           <thead>
             <tr>
