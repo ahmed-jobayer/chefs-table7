@@ -1,16 +1,15 @@
 import CurrentlyCooking from "./CurrentlyCooking";
 import WantToCook from "./WantToCook";
 
-const SideBar = () => {
+const SideBar = ({ wantToCook }) => {
+  console.log(wantToCook)
   return (
     <div className="w-2/5">
       {/* Want to cook */}
 
       <div className="overflow-x-auto">
         <div className="text-center">
-          <h1>
-            Want to cook: <span> 01</span>{" "}
-          </h1>
+          <h1>Want to cook: {wantToCook.length}</h1>
         </div>
         <table className="table table-zebra border-collapse">
           {/* head */}
@@ -24,7 +23,8 @@ const SideBar = () => {
           </thead>
           <tbody>
             {/* row 1 */}
-            <WantToCook></WantToCook>
+            { wantToCook.map( toCook => <WantToCook key={toCook.recipe_id} toCook={toCook}></WantToCook>)
+            }
           </tbody>
         </table>
       </div>
@@ -56,7 +56,9 @@ const SideBar = () => {
               <td>
                 Total Time = <br /> <span>45</span> minutes
               </td>
-              <td>Total Calories = <br /> <span>1050</span> calories</td>
+              <td>
+                Total Calories = <br /> <span>1050</span> calories
+              </td>
             </tr>
           </tbody>
         </table>

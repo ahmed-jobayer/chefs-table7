@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const Recipe = ({recipe}) => {
+const Recipe = ({recipe, handleWantToCook}) => {
     // console.log(recipe)
     const {recipe_name, image, short_description, preparing_time, calories, ingredients} = recipe
     
@@ -17,7 +17,7 @@ const Recipe = ({recipe}) => {
         <div className="">
           <h2 className="">{recipe_name}</h2>
           <p>{short_description}</p>
-          <h3>Ingredients: 6 {}</h3>
+          <h3>Ingredients: 6</h3>
           <ul>
             <li>{ingredients[0]}</li>
             <li>{ingredients[1]}</li>
@@ -31,7 +31,7 @@ const Recipe = ({recipe}) => {
             <p>{calories} calories</p>
           </div>
           <div className="">
-            <button className="btn ">Want to Cook</button>
+            <button onClick={() =>handleWantToCook(recipe)} className="btn ">Want to Cook</button>
           </div>
         </div>
       </div>

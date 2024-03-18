@@ -1,11 +1,13 @@
-const WantToCook = () => {
+const WantToCook = ({toCook}) => {
+//   console.log(toCook);
+  const {recipe_name, preparing_time, calories} = toCook
   return (
     <>
       <tr className="bg-[#28282808] ">
         <th>1</th>
-        <td>Cy Ganderton</td>
-        <td>Quality Control Specialist</td>
-        <td>Blue</td>
+        <td>{recipe_name}</td>
+        <td>{preparing_time}</td>
+        <td>{calories}</td>
         <td>
           <button className="btn">Preparing</button>
         </td>
